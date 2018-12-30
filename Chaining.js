@@ -1,3 +1,4 @@
+//http://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/
 // The data store:
 var usersData = [
     {firstName: "tommy", lastName: "MalCom", email: "test@test.com", id: 102},
