@@ -22,3 +22,22 @@ var p3 = new Promise((resolve, reject) =>{
     resolve(5);
 });
 p3.then((val)=> console.log("Promise p3 " + val));
+
+var p4 = new Promise((resolve, reject)=>{
+    reject(1);
+})
+
+p4
+.then((val)=> console.log(val))
+.catch((val)=> console.log("error" + val));
+
+
+p4.then((val)=> console.log("fulfilled:", val),  
+        (err)=> console.log("rejected:", err));
+//the following 2 statements are equal..
+p4.then((val) => console.log("fulfilled:", val))  
+    .catch((err) => console.log("rejected:", err));
+       
+p4.then((val) => console.log("fulfilled:", val))  
+    .then(null, (err) => console.log("rejected:", err));
+    
