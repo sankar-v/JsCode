@@ -54,7 +54,7 @@ var navbar = {
     show: function (user) {
         user.getProfile()
             .then( (profile) => {
-                console.log("Inside navbar ::");
+                console.log("Inside navbar");
                 return profile;
             })
             .then((x) => x.map((profile)=>{
@@ -69,7 +69,7 @@ var account = {
     show: function (user) {
         user.getProfile()
         .then( (profile) => {
-            console.log("Inside navbar ::");
+            console.log("Inside account");
             return profile;
         })
         .then((x) => x.map((profile)=>{
